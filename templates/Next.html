@@ -1,0 +1,123 @@
+<htmL>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link href="static/style.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: yellow
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      text-align: center;
+
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .button {
+      margin-top:20px;
+      background-color: #03506F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+
+    }
+  </style>
+
+  <title>Facial Emotion Analysis and Music Recommendation</title>
+
+</head>
+
+<body>
+
+  <!--Heading section-->
+  <div class="a" style="background-color:#00FF00;margin-top:0;position:relative;">
+    <div class="container"></div>
+
+
+ <!--Real time section-->
+  <div style="display:flex;flex-direction:column; align-items:center;
+  justify-content:center;
+  text-align:center;">
+    <div class="animation-area" style="height: 46vh;width:70%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;">
+    <div class="animation-area .container-sm" style="height: 70vh;width:70%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;background-color:#0A043C;margin:30px;color:white">
+    <p style="font-size:xx-large;padding-bottom:50px;" >Real time image</p>
+    <p style="font-size:x-large;padding-bottom:20px;">To detect your emotion using the webcam feed</p>
+    <form action="/RealTime" method="post">
+      <input type="submit" name="Real Time Image" value="Real Time Image" class="button" />
+    </form>
+ 
+</div>
+  </div>
+</div>
+  
+
+    <h1>OR</h1>
+  <!--manual section-->
+  
+  <div style="display:flex;flex-direction:column; align-items:center;
+  justify-content:center;
+  text-align:center;">
+    <div class="animation-area" style="height: 46vh;width:70%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;">
+    <div class="animation-area .container-sm" style="height: 70vh;width:70%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;background-color:#0A043C;margin:30px;color:white">
+    <p style="font-size:xx-large;padding-bottom:50px;">Manually Upload Image</p>
+    <p style="font-size:x-large;padding-bottom:20px;">To detect the emotion based on images you upload from your system or images fetched from url</p>
+      <form action="/ManualUpload" method="post">
+        <input type="submit" name="Manually Upload Image" value="Manually Upload Image" class="button" />
+      </form>
+ 
+</div>
+  </div>
+  </div>
+
+<div>

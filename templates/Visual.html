@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link href="static/style.css" rel="stylesheet">
+
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: yellow
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+.button {
+      background-color: #03506F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 1px 1px;
+      cursor: pointer;
+
+    }
+.btn{
+      background-color: tomato;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 1px 1px;
+      cursor: pointer;
+
+    }
+.area{
+	background-color: blue};
+  </style>
+</head>
+
+<body>
+  <div class="banner-text" >
+    <div style="color:#0A043C" class="animation-area" style="height: 100vh;">
+
+      <h1 style="color:#0A043C">Here is the Prediction !</h1>
+      <div style="padding-top:20px;display:flex;align-items:center;
+      justify-content:center;text-align:center;" >
+        <div style="padding:20px;" >
+          <h3  style="color:#0A043C" >Input Image</h3>
+          <img src="/static/{{orig}}" alt="Original" style="width:400px;height:500px;">
+        </div>
+        <div style="padding:20px;">
+          <h3  style="color:#0A043C">Prediction</h3>
+          <img src="/static/{{pred}}" alt="Prediction" style="width:400px;height:500px;">
+        </div>
+	
+	
+      </div>
+      </div>
+
+
+<div class="banner-text" >
+    <div style="color:blue" class="area" style="height: 80vh;">
+<div style="padding-top:20px;display:flex;align-items:center;
+      justify-content:center;text-align:center;" >
+        <div style="padding:20px;" >
+    <h2 >Graphical Visualisation</h2>
+        
+          
+          <img src="/static/{{bar}}" alt="Visualisation" style="width:400px;height:400px;padding-top:20px;"></div>
+  <div style="padding:20px;">
+        <form action="/song" method="post">
+          <input type="submit" name="Click the Photo" value="Let's See What's Next" onclick="alert('Lets Have Fun By Listening Songs')" class="btn" />
+        </form>
+      </div>
+        </div>
+        </div>
+      </div>
+
+
+
+    
+
+</body>
+
+</html>

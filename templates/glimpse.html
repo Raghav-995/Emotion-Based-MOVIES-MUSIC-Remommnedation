@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link href="static/style.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: yellow
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      text-align: center;
+
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .button {
+      margin-top:20px;
+      background-color: #03506F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+
+    }
+  </style>
+
+  <title>Facial Emotion Analysis and Music Recommendation</title>
+
+</head>
+
+<body>
+
+
+<!--Heading section-->
+  <div class="a" style="background-color:#00FF00;margin-top:0;position:relative;">
+    <div class="container"></div>
+    
+
+
+<!--about section-->
+  <div style="display:flex;flex-direction:column; align-items:center;
+  justify-content:center;
+  text-align:center;">
+    <div class="animation-area" style="height: 100vh;width:100%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;">
+    <div class="animation-area .container-sm" style="height: \70vh;width:70%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;background-color:#0A043C;margin:30px;color:white">
+    <p style="font-size:xx-large;" >Let's Have A Glimpse of the project !</p>
+    <div class="SLIDESHOW" >
+      <img class="mySlides" width=80% height=350px
+        src="https://user-images.githubusercontent.com/57671048/103117235-80cb3200-468f-11eb-93ca-766e6f42f5b1.jpg"
+        style="display:block">
+     
+      <img class="mySlides" width=80% height=350px
+        src="https://user-images.githubusercontent.com/57671048/98131265-1e508380-1ee1-11eb-92b5-12c7677c08c0.png"
+        style="display:block">
+      <img class="mySlides" width=80% height=350px
+        src="https://user-images.githubusercontent.com/57671048/98131077-f103d580-1ee0-11eb-9dc3-905f3884ee1b.png"
+        style="display:block">
+      <img class="mySlides" width=80% height=350px
+        src="https://user-images.githubusercontent.com/57671048/98131204-10026780-1ee1-11eb-999b-0182a68ce529.png"
+        style="display:block">
+      
+    </div>
+    
+ 
+</div>
+
+<form action="/Next" method="post">
+<strong><button class="button" onclick="alert('Are You Enjoying?')">Next!</button> </strong>
+</form>
+  </div>
+  </div></div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+  </script>
