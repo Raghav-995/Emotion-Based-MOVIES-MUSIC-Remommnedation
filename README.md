@@ -8,3 +8,5 @@ For Running The project In CMD;
 3.pip install ir requirements.txt
 4.py main.py
 5.py capture.py
+
+
