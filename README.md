@@ -16,6 +16,8 @@ For Running The project In CMD;
 
 5.py capture.py
 
+Outputs:
+
 ![Screenshot (59)](https://github.com/Raghav-995/Emotion-Based-MOVIES-MUSIC-Remommnedation/assets/139675343/ae4f0498-868c-4648-831a-3860b8db7d89)
 
 ![Screenshot (65)](https://github.com/Raghav-995/Emotion-Based-MOVIES-MUSIC-Remommnedation/assets/139675343/7d8b5bfe-edb8-4476-afdf-75b3c62f72d0)
