@@ -24,7 +24,6 @@ Outputs:
 
 ![Screenshot (51)](https://github.com/Raghav-995/Emotion-Based-MOVIES-MUSIC-Remommnedation/assets/139675343/03d20d77-bf21-4ebd-abd2-e8d0bcb39e9a)
 
-![Screenshot (51)](https://github.com/Raghav-995/Emotion-Based-MOVIES-MUSIC-Remommnedation/assets/139675343/49f67c68-10d6-4daf-bf6f-22340bf384c4)
 
 ![Screenshot (53)](https://github.com/Raghav-995/Emotion-Based-MOVIES-MUSIC-Remommnedation/assets/139675343/966d6570-b00e-4f63-95b8-f559c18616ef)
 
